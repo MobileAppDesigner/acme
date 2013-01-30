@@ -9,17 +9,90 @@
 </head> 
 <body> 
 
-<div data-role="page">
-
-	<div data-role="header">
-		<h1>My Title</h1>
-	</div><!-- /header -->
-
-	<div data-role="content">	
-		<p>Hello world</p>		
-	</div><!-- /content -->
-
-</div><!-- /page -->
+<!-- Home -->
+<div data-role="page" id="page1">
+    <div data-role="content">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Section Header
+                </h3>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="toggleswitch1">
+                        </label>
+                        <select name="toggleswitch1" id="toggleswitch1" data-theme="" data-role="slider">
+                            <option value="off">
+                                Off
+                            </option>
+                            <option value="on">
+                                On
+                            </option>
+                        </select>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="slider1">
+                            Value:
+                        </label>
+                        <input name="slider" value="50" min="0" max="100" data-highlight="false"
+                        type="range">
+                    </fieldset>
+                </div>
+                <a data-role="button" href="#page1">
+                    Button
+                </a>
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Section Header
+                </h3>
+                <a data-role="button" href="#page1">
+                    Button
+                </a>
+            </div>
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Section Header
+                </h3>
+            </div>
+        </div>
+        <a data-role="button" href="#page1">
+            Button
+        </a>
+        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-role="list-divider" role="heading">
+                Divider
+            </li>
+            <li data-theme="c">
+                <a href="#" data-transition="slide">
+                    Button
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Button
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Button
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Button
+                </a>
+            </li>
+            <li data-theme="c">
+                <a href="#page1" data-transition="slide">
+                    Button
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
 
 </body>
 </html>
