@@ -20,10 +20,65 @@
 	<div data-role="content">	
 		<p>Page content goes here.</p>
 
-<form>
-   <label for="slider-0">Input slider:</label>
-   <input type="range" name="slider" id="slider-0" value="25" min="0" max="100"  />
-</form>
+<!-- Home -->
+
+    <div data-role="content">
+        <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+                <h3>
+                    Section Header
+                </h3>
+                <form action="">
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <label for="slider2">
+                                Value:
+                            </label>
+                            <input name="slider" value="50" min="0" max="100" data-highlight="false"
+                            type="range">
+                        </fieldset>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <label for="toggleswitch2">
+                            </label>
+                            <select name="toggleswitch2" id="toggleswitch2" data-theme="" data-role="slider">
+                                <option value="off">
+                                    Off
+                                </option>
+                                <option value="on">
+                                    On
+                                </option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>
+                                Choose:
+                            </legend>
+                            <input id="radio1" name="" value="" type="radio">
+                            <label for="radio1">
+                                Option
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div id="checkboxes1" data-role="fieldcontain">
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>
+                                Choose:
+                            </legend>
+                            <input id="checkbox1" name="" type="checkbox">
+                            <label for="checkbox1">
+                                Option
+                            </label>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 
 	</div><!-- /content -->
 
